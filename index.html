@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Facebook Timeline</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!--===========================================
+                Header Start Here
+    ============================================-->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-2">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.svg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex position-relative" role="search">
+                        <input class="form-control me-2 ps-5 bg-light" type="search" placeholder="Search..."
+                            aria-label="Search">
+                        <button class="btn bg-transparent position-absolute top-50 start-0 translate-middle-y border-0">
+                            <i class="bi bi-search fs-5"></i>
+                        </button>
+                    </form>
+
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 myMenu align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My Network</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-chat-left-text-fill rounded"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-gear-fill rounded"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item notification-msg">
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-bell-fill rounded"></i>
+                            </a>
+                            <div class="notification"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img class="rounded" src="images/apu barua.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--===========================================
+                Header End Here
+    ============================================-->
+    <!--===========================================
+                Main Start Here
+    ============================================-->
+    <main>
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-lg-3">
+                    <div class="d-flex align-items-center d-lg-none">
+                        <button class="border-0 bg-transparent" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <i class="btn btn-primary bi bi-sliders"></i>
+                            <span class="h6 mb-0 fw-bold ms-2">profile</span>
+                        </button>
+                    </div>
+                    <nav class="navbar navbar-expand-lg mx-0">
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                            aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body d-block px-2">
+                                <div class="card overflow-hidden">
+                                    <div class="h-150px"
+                                        style="background-image: url(images/01.jpg);background-repeat: no-repeat;background-size: cover;background-position: center;">
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="text-center">
+                                            <a href="#" class="avatar">
+                                                <img class="avatar-img border border-white border-3 rounded shadow"
+                                                    src="images/apu barua.jpg" alt="">
+                                            </a>
+                                            <a href="#" class="avatar-name">
+                                                Apu Barua
+                                            </a>
+                                            <small class="d-block">MERN Stack Developer</small>
+                                            <p class="my-3">I'd love to change the world, but they won’t give me the
+                                                source code.</p>
+                                            <div class="d-xl-flex justify-content-between">
+                                                <div>
+                                                    <h6 class="fw-900">256</h6>
+                                                    <small>Posts</small>
+                                                </div>
+                                                <div class="vr"></div>
+                                                <div>
+                                                    <h6 class="fw-900">25.4K</h6>
+                                                    <small>Followers</small>
+                                                </div>
+                                                <div class="vr"></div>
+                                                <div>
+                                                    <h6 class="fw-900">365</h6>
+                                                    <small>Following</small>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <ul class="profile-feed">
+                                                <li>
+                                                    <a href="#" class="d-flex align-items-center">
+                                                        <img src="images/home-outline-filled.svg" alt=""
+                                                            class="feed-img">
+                                                        <span>Feed</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-flex align-items-center">
+                                                        <img src="images/person-outline-filled.svg" alt=""
+                                                            class="feed-img">
+                                                        <span>Connections</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-flex align-items-center">
+                                                        <img src="images/earth-outline-filled.svg" alt=""
+                                                            class="feed-img">
+                                                        <span>Latest News</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-flex align-items-center">
+                                                        <img src="images/calendar-outline-filled.svg" alt=""
+                                                            class="feed-img">
+                                                        <span>Events</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-flex align-items-center">
+                                                        <img src="images/chat-outline-filled.svg" alt=""
+                                                            class="feed-img">
+                                                        <span>Groups </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-flex align-items-center">
+                                                        <img src="images/notification-outlined-filled.svg" alt=""
+                                                            class="feed-img">
+                                                        <span>Notifications</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="d-flex align-items-center">
+                                                        <img src="images/cog-outline-filled.svg" alt=""
+                                                            class="feed-img">
+                                                        <span>Settings</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer text-center bg-white">
+                                        <a href="#" class="fw-bold">View Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-6">
+                    <div class="stories-profile mt-2">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="stories">
+                                        <div
+                                            class="card h-150px border border-dashed border-2 d-flex justify-content-center align-items-center">
+                                            <a href="#">
+                                                <i class="fa-solid fa-plus"></i>
+                                            </a>
+                                            <p>Post a Story</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="stories-img rounded h-150px"
+                                        style="background-image: url(images/02.jpg);background-repeat: no-repeat;background-size: cover;position: relative;padding: 10px;">
+                                        <a href="#" class="text-white small">Farjana Yesmen</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="stories-img rounded h-150px"
+                                        style="background-image: url(images/03.jpg);background-repeat: no-repeat;background-size: cover;position: relative;padding: 10px;">
+                                        <a href="#" class="text-white small">Zakaria Islam</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="stories-img rounded h-150px"
+                                        style="background-image: url(images/04-stories.jpg);background-repeat: no-repeat;background-size: cover;position: relative;padding: 10px;">
+                                        <a href="#" class="text-white small">Gutibaz</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="stories-img rounded h-150px"
+                                        style="background-image: url(images/05-stories.jpg);background-repeat: no-repeat;background-size: cover;position: relative;padding: 10px;">
+                                        <a href="#" class="text-white small">Tarek Islam</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="stories-img rounded h-150px"
+                                        style="background-image: url(images/01-stories.jpg);background-repeat: no-repeat;background-size: cover;position: relative;padding: 10px;">
+                                        <a href="#" class="text-white small">Ridwan</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="stories-img rounded h-150px"
+                                        style="background-image: url(images/10.jpg);background-repeat: no-repeat;background-size: cover;position: relative;padding: 10px;">
+                                        <a href="#" class="text-white small">Marfi Laboni</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="stories-img rounded h-150px"
+                                        style="background-image: url(images/shahed.jpg);background-repeat: no-repeat;background-size: cover;position: relative;padding: 10px;">
+                                        <a href="#" class="text-white small">M.F.U. Shahed</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="stories-img rounded h-150px"
+                                        style="background-image: url(images/arijit.jpg);background-repeat: no-repeat;background-size: cover;position: relative;padding: 10px;">
+                                        <a href="#" class="text-white small">Arijit Singh</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post-part mt-4 mb-4">
+                        <div class="card px-4 py-4">
+                            <div class="d-flex gap-2 align-items-center">
+                                <a href="#">
+                                    <img src="images/apu barua.jpg" alt="" class="post-avatar">
+                                </a>
+                                <form action="" class="w-100 post-share">
+                                    <input type="text" class="form-control w-100"
+                                        placeholder="What's on your mind, Apu Barua?" href="#post-modal"
+                                        data-bs-toggle="modal">
+                                </form>
+                            </div>
+                            <hr>
+                            <ul class="nav post-icon">
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-image text-success"></i>
+                                        <span class="small">Photo</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-camera-reels-fill text-primary"></i>
+                                        <span class="small">Video</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-calendar-event-fill text-danger"></i>
+                                        <span class="small">Event</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-emoji-sunglasses-fill text-warning"></i>
+                                        <span class="small">Feeling</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="post-details">
+
+                    </div>
+
+                </div>
+                <div class="col-lg-3">
+                    <div class="card mt-2">
+                        <div class="card-header bg-white border-0">
+                            <h5 class="card-title mt-2">Who to follow</h5>
+                        </div>
+                        <div class="card-body pt-0">
+                            <div class="follower mb-3">
+                                <div class="d-flex">
+                                    <a href="#">
+                                        <img class="rounded" src="images/arijit.jpg" alt="">
+                                    </a>
+                                    <div class="ms-2">
+                                        <a href="#" class="follower-title">Arijit</a>
+                                        <p class="small text-truncate">News anchor</p>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+                            </div>
+                            <div class="follower mb-3">
+                                <div class="d-flex">
+                                    <a href="#">
+                                        <img class="rounded" src="images/11.jpg" alt="">
+                                    </a>
+                                    <div class="ms-2">
+                                        <a href="#" class="follower-title">Bazzi Nick</a>
+                                        <p class="small text-truncate">Web Developer</p>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+                            </div>
+                            <div class="follower mb-3">
+                                <div class="d-flex">
+                                    <a href="#">
+                                        <img class="rounded border border-3 border-primary" src="images/10.jpg" alt="">
+                                    </a>
+                                    <div class="ms-2">
+                                        <a href="#" class="follower-title">Marfi Laboni</a>
+                                        <p class="small text-truncate">Web Designer</p>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <i class="fa-solid fa-user-check"></i>
+                                </a>
+                            </div>
+                            <div class="follower mb-3">
+                                <div class="d-flex">
+                                    <a href="#">
+                                        <img class="rounded" src="images/shahed.jpg" alt="">
+                                    </a>
+                                    <div class="ms-2">
+                                        <a href="#" class="follower-title">M.F.U. Shahed</a>
+                                        <p class="small text-truncate">Graphic Designer</p>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+                            </div>
+                            <div class="follower mb-3">
+                                <div class="d-flex">
+                                    <a href="#">
+                                        <img class="rounded" src="images/placeholder.jpg" alt="">
+                                    </a>
+                                    <div class="ms-2">
+                                        <a href="#" class="follower-title">Carolyn Ortiz</a>
+                                        <p class="small text-truncate">UI/UX Designer</p>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+                            </div>
+                            <button class="btn btn-sm btn-primary-soft w-100 mt-3">View More</button>
+                        </div>
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-header bg-white border-0">
+                            <h5 class="card-title mt-2">Today’s news</h5>
+                        </div>
+                        <div class="card-body pt-0">
+                            <div class="news mb-3">
+                                <a href="#" class="follower-title">Ten questions you should answer truthfully</a>
+                                <p class="small text-truncate">2hr</p>
+                            </div>
+                            <div class="news mb-3">
+                                <a href="#" class="follower-title">Five unbelievable facts about money</a>
+                                <p class="small text-truncate">3hr</p>
+                            </div>
+                            <div class="news mb-3">
+                                <a href="#" class="follower-title">Best Pinterest Boards for learning about business</a>
+                                <p class="small text-truncate">5hr</p>
+                            </div>
+                            <div class="news mb-3">
+                                <a href="#" class="follower-title">Skills that you can learn from business</a>
+                                <p class="small text-truncate">8hr</p>
+                            </div>
+                            <button class="btn btn-sm btn-primary-soft w-100 mt-3">View All Latest News</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--===========================================
+                Main End Here
+    ============================================-->
+
+    <button class="btn btn-primary msg-fixed">
+        <i class="bi bi-chat-left-text"></i>
+    </button>
+
+    <!--===========================================
+                post modal start here
+    ============================================-->
+    <div class="modal fade" id="post-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Add Your Post</h2>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="msg"></div>
+                    <form action="" id="post_modal_form">
+                        <div class="my-3">
+                            <label for="">Auth Name</label>
+                            <input type="text" class="form-control" name="authName">
+                        </div>
+                        <div class="my-3">
+                            <label for="">Auth Photo</label>
+                            <input type="text" class="form-control" name="authPhoto">
+                        </div>
+                        <div class="my-3">
+                            <label for="">Auth Designation</label>
+                            <input type="text" class="form-control" name="authDesignation">
+                        </div>
+                        <div class="my-3">
+                            <label for="">post Description</label>
+                            <textarea id="" rows="3" class="form-control" name="postDescription"></textarea>
+                        </div>
+                        <div class="my-3">
+                            <label for="">post Photo</label>
+                            <input type="text" class="form-control" name="postPhoto">
+                        </div>
+                        <div class="my-3">
+                            <input type="submit" class="btn btn-primary w-100" value="Add Post">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--===========================================
+                post modal end here
+    ============================================-->
+
+    <!--===========================================
+                edit post modal start here
+    ============================================-->
+    <div class="modal fade" id="edit-post-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Edit Your Post</h2>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="edit_post_details">
+                    <form action="" id="edit_post_form">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--===========================================
+                edit post modal end here
+    ============================================-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/function.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

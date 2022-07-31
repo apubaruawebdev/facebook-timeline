@@ -1,0 +1,307 @@
+/* Inter fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin-bottom: 0;
+}
+ul, li{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+main{
+    background: #eff2f6;
+    margin-top: 75px;
+}
+.form-control:focus{
+    border-color: #0f6fec;
+    outline: none;
+    box-shadow: none;
+}
+.h-150px{
+    height: 150px;
+}
+.avatar-img{
+    height: 100px;
+    width: 100px;
+    margin-top: -4rem;
+}
+.vr{
+    display: inline-block;
+    align-self: stretch;
+    width: 1px;
+    min-height: 1em;
+    background-color: #959191;
+}
+.feed-img{
+    height: 20px;
+    margin-right: 10px;
+    width: 20px;
+}
+.profile-feed li{
+    margin-bottom: 10px;
+}
+.profile-feed li a span{
+    font-weight: 700;
+    color: #14191e;
+    transition: all 0.4s ease;
+}
+.profile-feed li a:hover span{
+    color: #0f6fec;
+}
+.avatar{
+    display: block;
+}
+.avatar img{
+    margin-bottom: 15px;
+}
+.avatar-name{
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: 700;
+    color: #14191e;
+}
+.fw-900{
+    font-weight: 900;
+}
+.follower{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.follower a img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+.follower a i{
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 0.9em;
+    color: #0f6fec;
+    background-color: rgba(15, 111, 236, 0.1); 
+    line-height: 2.5rem;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+
+}
+.follower a:hover i{
+    background-color: #0f6fec;
+    color: #fff;
+}
+.follower a i.fa-user-check{
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 0.9em;
+    color: #fff;
+    background-color: #0f6fec; 
+    line-height: 2.5rem;
+    text-align: center;
+    border-radius: 5px;
+}
+.follower-title{
+    font-weight: 700;
+    font-size: 0.9375rem;
+    color: #14191e;
+}
+.small, small{
+    font-size: 0.875em;
+}
+.btn-primary-soft {
+    color: #0f6fec;
+    background-color: rgba(15, 111, 236, 0.1);
+    transition: all 0.4s ease;
+}
+.btn-primary-soft:hover{
+    color: #fff;
+    background-color: #0f6fec;
+    border-color: transparent;
+}
+.card-title{
+    font-weight: 700;
+    color: #14191e;
+}
+.myMenu li a{
+    position: relative;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+.myMenu li a.active::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #0f6fec;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -16px;
+}
+.myMenu li a i{
+    background-color: #eff2f6;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: block;
+    text-align: center;
+    line-height: 2.5rem;
+}
+.myMenu li a img{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.notification-msg{
+    position: relative;
+}
+.notification{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    right: 9px;
+    top: 9px;
+}
+.msg-fixed{
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+}
+.border-dashed{
+    border-style: dashed !important;
+}
+.stories a i{
+    height: 40px;
+    width: 40px;
+    background: #eef0f2;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #14191e;
+}
+.stories-img{
+    cursor: pointer;
+}
+.stories-img a{
+    position: absolute;
+    bottom: 15px;
+    z-index: 1;
+}
+.post-part a .post-avatar{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+textarea {
+    resize: none;
+}
+.post-icon a{
+    padding: 5px 10px;
+    background-color: rgba(15, 111, 236, 0.1);
+    border-radius: 5px;
+    color: #14191e;
+}
+.post-icon li{
+    margin-right: 10px;
+}
+.post-icon li a:hover span{
+    color: #0f6fec;
+}
+.threeDots i{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    background-color: transparent;
+    text-align: center;
+    color: #14191e;
+    display: block;
+}
+.threeDots:hover i{
+    background-color: rgba(20, 25, 30, 0.1);
+}
+.profile-img img{
+    width: 50px;
+    height: 50px;
+    border: 3px solid #0d6efd;
+}
+.profile-des-title{
+    color: #14191e;
+    font-weight: 700;
+}
+.profile-des span{
+    font-size: 14px;
+}
+.profile-des span::before{
+    content: '•';
+    color: #6c757d;
+    padding-left: 8px;
+    padding-right: 4px;
+    
+
+}
+.profile-feed a{
+    padding: 5px 10px;
+    transition: all 0.4s ease;
+}
+.profile-feed a:hover{
+    background-color: rgba(20, 25, 30, 0.1);
+    border-radius: 5px;
+}
+.post-icon span{
+    font-weight: 700;
+}
+.stories-img::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: #00000059;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: 0;
+    border-radius: 7px;
+}
+
+/* Respomsive Design */
+@media (max-width: 576px) {
+    .post-icon li{
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 991.98px) {
+    .myMenu li a.active::after{
+        display: none;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .follower .d-flex{
+        flex-direction: column;
+    }
+    .follower .ms-2{
+        margin-left: 0 !important;
+    }
+}
+.post-share input{
+    border-radius: 20px;
+    background-color: #F0F2F5;
+    transition: all 0.4s ease;
+}
+.post-share input:hover{
+    background-color: #65676b30;
+}
+.post-details{
+    display: flex;
+    flex-direction: column-reverse;
+}
+i{
+    pointer-events: none;
+}
